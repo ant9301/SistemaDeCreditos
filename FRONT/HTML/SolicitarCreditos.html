@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principal</title>
+     <link rel="stylesheet" href="../CSS/principal.css">          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../JS/solicitarCreditos.js"></script>
+    <script src="../JS/salir.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="principal">
+                        <div> <img id="logoImg" src="../RES/uaem-logo.png" alt="" >
+               <img id="logofac" src="../RES/logofacultadDeporte.jpg" alt="" >
+         </div>
+          <nav>
+<ul>
+  <li><a href="paginaPrincipal.html">Pagina principal</a></li>
+  <li><a href="VerCalendario.html">Calendario</a></li>
+  <li><a href="MisCreditos.html">Mis Creditos</a></li>
+  <li><a href="SolicitarCreditos.html">Solicitar Creditos</a> <li>
+      <li><a href="cambioCorreo.html">Cambiar correo</a> <li>
+      <li><a href="crearqr.html">Crear QR</a> <li>
+    <li><button id="salir">Salir</button> </li>
+</ul>
+        <div id="logo"></div>
+         
+          </nav>
+          <div id="sol_creditos">
+             <!--<label for="">Ingrese Comentario</label>-->
+             <select name="" id="solEvento">
+             </select>
+              <textarea name="" id="descEvento" cols="30" rows="5" id="comentario" placeholder="ingrese la descripcion del evento" style="display:none"></textarea><br>
+              <label for="">Cargar evidencias</label>
+                  <form enctype="multipart/form-data" class="formulario">
+                        <label>Subir un archivo</label><br />
+                        <input name="archivo" type="file" id="imagenSolicitud" /><br /><br />                        
+                  </form>
+                                   <!--div para visualizar mensajes-->
+                <div class="messages"></div><br /><br />
+            <!--div para visualizar en el caso de imagen-->
+                <div class="showImage"></div>    
+                  <button  id="SolAsis">Solicitar Creditos</button>
+                  <button  id="SolHis">Historial de Solicitudes</button>
+                  <div id="historial"></div>
+          </div>
+        </div> 
+             <img id="pieImagen" src="../RES/bannerConstancia.png" alt="" >
+    </div>
+</body>
+</html>

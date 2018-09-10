@@ -1,0 +1,303 @@
+@font-face {
+	font-family: OpenSans;
+	src: url(../res/fuentes/OpenSans-Regular.ttf) format("truetype");
+}
+
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    
+    
+}
+
+#contenedor {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    /*background-color: brown;*/
+}
+
+#principal{
+    
+    width: 80%;
+    /*height: auto;*/
+      min-height: 120%;
+  height: auto !important;
+  height: 120%;
+    
+    
+    margin-left: 10%;
+    
+    
+   /*background-color: aquamarine;*/
+   
+    box-shadow: 0 0 6px #777777;
+}
+#pieImagen{
+    
+    width: 80%;
+    margin-left: 10%;
+   /*background-color: aquamarine;*/
+   
+    margin-bottom: 0%; position:relative;
+}
+#logoImg{
+   
+    width: 15%;
+     margin-right: 8%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+nav{
+    width: 100%;
+    height: 10%;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+#logo {
+      background-color: #cccccc;
+}
+
+#galeria{
+    width: 100%;
+    height: 30%;
+    background-color: aqua;
+    
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+
+select {
+  position: relative;
+  border: 1px solid #ccc;
+  width: 120px;
+  overflow: hidden;
+  background-color: #fff;
+}
+  
+select:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+}
+  
+select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+}
+
+
+#usuarios,#eventos,#verCreditos {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+#usuarios select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#EventosSelect  {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+Select  {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+ input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#usuarios input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#usuarios button {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#usuarios button:hover {
+    width: 55%;
+    background-color: #45a049;
+}
+
+#crear_eventos select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#crear_eventos input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#crear_eventos button {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#crear_eventos button:hover {
+    width: 55%;
+    background-color: #45a049;
+}
+
+
+
+#slideshow {
+  margin: 5% auto;
+  position: relative;
+  width: 90%;
+  height: 35%;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+    width: 100%;
+}
+
+#slideshow img{
+    width: 97%;
+    height: 100%;
+} 
+#logofac {
+        width: 10%;
+    margin-left: 65%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.orden_elementos {
+}
+
+.ordenar_elementos label {
+    float: left;
+    width: 8%;
+}
+ordenar_elementos.  input[type=text]  {
+    margin-left: 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principal</title>
+    <link rel="stylesheet" href="../CSS/principal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../JS/generarQr.js"></script>
+    <script src="../JS/salir.js"></script>
+    
+<script type="text/javascript" src="../JS/qrcode.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="principal">
+                        <div> <img id="logoImg" src="../RES/uaem-logo.png" alt="" >
+               <img id="logofac" src="../RES/logofacultadDeporte.jpg" alt="" >
+         </div>
+          <nav>
+ <ul>
+  <li><a href="paginaPrincipal.html">Pagina principal</a></li>
+  <li><a href="VerCalendario.html">Calendario</a></li>
+  <li><a href="MisCreditos.html">Mis Creditos</a></li>
+  <li><a href="SolicitarCreditos.html">Solicitar Creditos</a> <li>
+  <li><a href="cambioCorreo.html">Cambiar correo</a> <li>
+   <li><a href="crearqr.html">Crear QR</a> <li>
+    <li><button id="salir">Salir</button> </li>
+</ul>
+        <div id="logo"></div>
+         
+          </nav>
+         
+          <h2>Generar codigo QR</h2>
+<div data-role="content">
+<form>
+<textarea name="msg" rows="10" cols="40" style="display:none" id="generadorQR">Texto a codificar</textarea><br> 
+<input type="button" value="Generar" onclick="update_qrcode()">
+</form>
+<div id="qr"></div>
+</div>
+
+
+
+        </div> 
+             <img id="pieImagen" src="../RES/bannerConstancia.png" alt="" >
+    </div>
+</body>
+</html>

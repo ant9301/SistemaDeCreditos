@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principal</title>
+     <link rel="stylesheet" href="../CSS/principal.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../JS/asistencias.js"></script>
+    <script src="../JS/salir.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="principal">
+                        <div> <img id="logoImg" src="../RES/uaem-logo.png" alt="" >
+               <img id="logofac" src="../RES/logofacultadDeporte.jpg" alt="" >
+         </div>
+          <nav>
+
+ <ul>
+  <li><a href="Admin.html">Pagina principal</a></li>
+  <li><a href="usuarios.html">Usuarios</a></li>
+  <li><a href="CrearEventos.html">Eventos</a></li>
+  <li><a href="Asistencia.html">Asistencias</a> </li>
+  <li><a href="AprobarCreditos.html">Aprobar Creditos</a> <li>
+    <li><a href="Semestre.html">Semestre </a><li>
+     <li><button id="salir">Salir</button> </li>
+</ul>
+        <div id="logo"></div>
+         
+          </nav>
+          <div id="asistencias">
+          <h1>Administracon de eventos</h1><br>
+              <h2>Seleccione una opcion </h2>
+              <select name="" id="AsistenciaSelect">
+                 <option value="0">
+                     Selecciona una opcion
+                 </option>
+                  <option value="1">
+                      Tomar asistencia
+                  </option>                  
+                  <option value="2">
+                      Quitar asistencia
+                  </option>
+              </select>
+          <div id="pasar_asis" style="display:none">
+          
+          <label for="">Seleccione un evento</label>
+          <select name="" id="id_eventSelect">              
+          </select><br><br>
+         <label for="">Matricula</label>
+            <select name="" id="matriculaAsis">              
+          </select><br><br>
+            <label for="">Horas acreditadas</label>
+             <input type="text" id="horasAsistencia"><br>
+             <button value="" id="asistenciaEvento">Registrar</button>    
+              
+              </div>
+          <div id="quitar_asis" style="display:none">
+          
+          <label for="">Seleccione un evento</label>
+          <select name="" id="eliminar_id_eventSelect">              
+          </select><br><br>
+         <label for="">Matricula</label>
+            <select name="" id="eliminar_matriculaAsis">              
+          </select><br><br>
+             
+             <button value="" id="quitar_Asis_Evento">Eliminar</button>    
+              
+              </div>
+          </div>
+        </div> 
+             <img id="pieImagen" src="../RES/bannerConstancia.png" alt="" >
+    </div>
+</body>
+</html>

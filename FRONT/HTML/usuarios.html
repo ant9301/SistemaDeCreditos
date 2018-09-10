@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Administracion</title>
+     <link rel="stylesheet" href="../CSS/principal.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../JS/usuarios.js"></script>
+    <script src="../JS/salir.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.js"></script>
+<link href="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="principal">
+                        <div> <img id="logoImg" src="../RES/uaem-logo.png" alt="" >
+               <img id="logofac" src="../RES/logofacultadDeporte.jpg" alt="" >
+         </div>
+          <nav>
+
+ <ul>
+  <li><a href="Admin.html">Pagina principal</a></li>
+  <li><a href="usuarios.html">Usuarios</a></li>
+  <li><a href="CrearEventos.html">Eventos</a></li>
+  <li><a href="Asistencia.html">Asistencias</a> </li>
+  <li><a href="AprobarCreditos.html">Aprobar Creditos</a> <li>
+  <li><a href="Semestre.html">Semestre </a> <li>
+    <li><button id="salir">Salir</button> </li>
+</ul>
+        <div id="logo"></div>
+         
+          </nav>
+          <h1>Administracon de usuarios</h1>
+          <div id="usuarios">
+              <h2>Seleccione una opcion </h2>
+              <select data-toggle="tooltip" title="Crear,editar usuarios" name="" id="UsuariosSelect">
+                 <option value="0">
+                     Selecciona una opcion
+                 </option>
+                  <option value="1">
+                      Agregar usuarios
+                  </option>
+                  <option value="2">Modificar usurios</option>
+                  <option value="3">
+                      Eliminar usuarios
+                  </option>
+              </select>
+              <div class="ordenar_elementos" id="agregarUsuario" style="display:none">
+                  <label for="">Nombre: </label><input type="text" id="AgregarNombre"><br>
+                  <label for="">Apellidos: </label>
+                  <input type="text" id="ApAgregar"><br>
+                  <label for="">Matricula: </label><input type="text" id="AgregarMatricula"><br>
+                  <label for="">Correo: </label><input type="text" id="AgregarCorreo"><br>
+                  <label for="">Grupo: </label><input type="text" id="AgregarGrupo"><br>
+                  <label for="">Semestre: </label><input type="text" id="Agregarsemestre"><br>
+            <select name="" id="tipoSelect">
+                 <option value="0">
+                     Selecciona una opcion
+                 </option>
+                  <option value="1">
+                      Administrador
+                  </option>
+                  <option value="2">estudiante</option>
+              </select><br>
+             <button id="BTAgregarUsuario">Agregar</button>
+            <form enctype="multipart/form-data" class="formulario">
+                        <label>Agregar de forma masiva</label><br />
+                        <input name="archivo" type="file" id="cargaMasiva" /><br /><br />                        
+                  </form>
+              </div>
+              <div class="ordenar_elementos" id="ModUsuarios" style="display:none">
+                  <select name="" id="ModificarSelect"></select><br>
+                  <label for="">Nombre</label><input type="text" id="ModNombre"><br>
+                  <label for="">Apellido</label><input type="text" id="ModAp"><br>
+                  <label for="">Matricula</label><input type="text" id="ModMatricula"><br>
+                  <label for="">Contraseña</label><input type="text" id="ModPass"><br>
+                  <label for="">Grupo: </label><input type="text" id="modGrupo"><br>
+                  <label for="">Semestre: </label><input type="text" id="modsemestre"><br>
+                  <button id="ModificaUsuario">Modificar</button>
+                  
+              </div>
+              <div class="ordenar_elementos"  id="ElimnarUsuario" style="display:none">
+                 <select name="" id="ElimnarSelect"></select><br>
+                  <label for="">Nombre</label><input type="text" id="ElimanrNombre"><br>
+                  <label for="">Apellidos</label><input type="text" id="EliminarAp"><br>
+                  <label for="">Matricula</label><input type="text" id="ElimnarMatricula"><br>
+                  <button   id="BTelimnarUsuario">Eliminar</button>
+                  <br>
+              </div>
+          </div>
+        </div> 
+             <img id="pieImagen" src="../RES/bannerConstancia.png" alt="" >
+    </div>
+</body>
+</html>
