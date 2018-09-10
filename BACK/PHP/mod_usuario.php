@@ -4,12 +4,15 @@
         $conexion= new Conexion();
 
 
-            $stm=$conexion->conexion_db->prepare("UPDATE usuarios SET matricula= ?,pass= ?,nombre= ?,apellido= ? WHERE matricula= ?");
-            $stm->bind_param("ssssd", $matricula,$pass,$nombre,$apellido,$id);
+            $stm=$conexion->conexion_db->prepare("UPDATE usuarios SET matricula= ?,pass= ?,nombre= ?,apellido= ? ,correo=?, semestre=?,grupo=? WHERE matricula= ?");
+            $stm->bind_param("sssssssd", $matricula,$pass,$nombre,$apellido,$correo,$semestre,$grupo,$id);
             $matricula=$_POST['matricula'];
             $pass=$_POST['pass'];
             $nombre=$_POST['nombre'];
             $apellido=$_POST['apellido'];
+            $correo=$_POST['correo'];
+            $semestre=$_POST['semestre'];
+            $grupo=$_POST['grupo'];
             $id=$_POST['id'];
             $stm->execute();                
             $conexion->conexion_db->close();  

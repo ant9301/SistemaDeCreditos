@@ -57,6 +57,9 @@ $(document).ready(function(){
             nombre:$("#ModNombre").val(),
             apellido:$("#ModAp").val(),
             id:$("#ModificarSelect").val(),
+            correo:$("#ModCorreo").val(),
+            grupo:$("#ModGrupo").val(),
+            semestre:$("#Modsemestre").val()
         },function( data ) {
             alert(data);
     });
@@ -83,6 +86,9 @@ $(document).ready(function(){
             $("#ModAp").val(usuario.apellido);
             $("#ModMatricula").val(usuario.matricula);
             $("#ModPass").val(usuario.pass);
+            $("#ModCorreo").val(usuario.correo);
+            $("#ModGrupo").val(usuario.grupo);
+            $("#Modsemestre").val(usuario.semestre);
     });
     });
     

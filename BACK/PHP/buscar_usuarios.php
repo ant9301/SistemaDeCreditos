@@ -16,9 +16,12 @@
             $row = $usuario->fetch_array(MYSQLI_ASSOC);
             $datos=array(
                 "nombre"=>$row["nombre"],
+                "pass"=>$row["pass"],
                 "apellido"=>$row["apellido"],
                 "matricula"=>$row["matricula"],                
-                "pass"=>$row["pass"]
+                "correo"=>$row["correo"],
+                "grupo"=>$row["grupo"],
+                "semestre"=>$row["semestre"],
             );
            
             $conexion->conexion_db->close();
