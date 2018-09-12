@@ -301,3 +301,19 @@ Select  {
 ordenar_elementos.  input[type=text]  {
     margin-left: 20px;
 }
+
+.imgSol{
+    /*width:50%;@important*/
+    font-size:10px;@important;
+    height: 50%;
+}
+
+#salir{
+    background-color:crimson;
+    color: white;
+    
+    
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}

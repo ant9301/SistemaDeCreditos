@@ -31,6 +31,19 @@ $(document).ready(function(){
                 });    
         
         
+        });   
+    
+    $("#aprobar_creditos").on('click', '.imgSol', function () {        
+        x= $(this).parents("tr").attr("class");
+                $.post("../../BACK/PHP/denegarCredito.php", {
+                    matricula:$(this).parents("tr").find("td").eq(2).text(),
+                    evento:$(this).parents("tr").find("td").eq(3).attr("id"),
+                    comentario:$("#0"+x).val()                    
+                }, function (data) {
+                    alert(data)
+                });    
+        
+        
         });
     
    

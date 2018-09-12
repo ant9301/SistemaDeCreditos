@@ -30,9 +30,9 @@
                       <td>".$fila['apellido']."</td>
                       <td>".$fila['matricula']."</td>
                       <td id='".$fila['idevento']."' >".$fila['evento']."</td>              
-                      <td><button class='imgSol'>Ver imagen</button></td>
+                      <td><button class='imgSol' id='".$fila['imagenes']."' >Ver imagen</button></td>
                       <td><label for=''>Horas/Comentario</label></td>
-                      <td><input type='text' class='elinimarComentario' id='0".$cont."'><br></td>
+                      <td><input type='text' class='eliminarComentario' id='0".$cont."'><br></td>
                       <td><button class='btaceptar'>Aprobar</button></td>
                       <td><button class='btdenegar'>Denegar</button></td>
                   </tr>";
